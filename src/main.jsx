@@ -8,7 +8,7 @@ import "./ProductCardCreator.css";
 import "./App.css";
 import "./ShoppingCart.css";
 
-import ShoppingCart from "./ShoppingCart.jsx"; // Asegúrate de importar el componente ShoppingCart
+import ShoppingCart from "./ShoppingCart.jsx"; 
 
 createRoot(document.getElementById("root")).render(
   <App />,

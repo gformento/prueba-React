@@ -1,7 +1,6 @@
-// src/App.jsx
-import React, { useState } from "react"; // Importa useState
+import React, { useState } from "react";
 import ProductCardCreator from "./ProductCardCreator";
-import ShoppingCart from "./ShoppingCart"; // Importa el nuevo componente
+import ShoppingCart from "./ShoppingCart";
 import "./App.css";
 
 function App() {
@@ -50,7 +49,6 @@ function App() {
       }
     });
   };
-  // ¡NUEVA FUNCIÓN! Para vaciar el carrito
   const clearCart = () => {
     setCart([]); // Establece el estado del carrito a un array vacío
   };
@@ -58,7 +56,7 @@ function App() {
     <div className="App">
       {/* Pasamos la función addToCart al ProductCardCreator para que sus tarjetas puedan usarla */}
       <ProductCardCreator onAddToCart={addToCart} />
-      <hr /> {/* Un separador visual */}
+      <hr />
       {/* Pasamos el estado del carrito y la función para eliminar/decrementar */}
       <ShoppingCart
         cart={cart}

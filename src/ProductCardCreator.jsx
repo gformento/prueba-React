@@ -1,4 +1,3 @@
-// src/components/ProductCardCreator.jsx
 import React, { useState } from "react";
 import ProductCard from "./ProductCard";
 import "./ProductCardCreator.css";
@@ -10,7 +9,7 @@ const ProductCardCreator = ({ onAddToCart }) => {
   // **Nuevos estados para los campos del formulario**
   const [productName, setProductName] = useState("");
   const [productDescription, setProductDescription] = useState("");
-  const [productPrice, setProductPrice] = useState(""); // Usaremos string para la entrada, luego la convertimos a número
+  const [productPrice, setProductPrice] = useState("");
 
   // Función para manejar el envío del formulario
   const handleSubmit = (e) => {
@@ -35,10 +34,7 @@ const ProductCardCreator = ({ onAddToCart }) => {
       name: productName,
       description: productDescription,
       price: parseFloat(productPrice),
-      // CAMBIA esta línea para probar
-      image: `https://via.placeholder.com/150/0000FF/FFFFFF?text=PROD+${nextProductId}`, // Un placeholder simple azul
-      // O una imagen de prueba:
-      // image: `https://picsum.photos/id/${nextProductId}/150/150`, // Usará imágenes aleatorias de Lorem Picsum
+      image: `https://via.placeholder.com/150/0000FF/FFFFFF?text=PROD+${nextProductId}`,
     };
 
     setProducts((prevProducts) => [...prevProducts, newProduct]);

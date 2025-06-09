@@ -1,6 +1,5 @@
-// src/components/ShoppingCart.jsx
 import React from "react";
-import "./ShoppingCart.css"; // Opcional: para estilos del carrito
+import "./ShoppingCart.css";
 
 const ShoppingCart = ({ cart, onRemoveFromCart, onClearCart }) => {
   // Calcula el total del carrito
@@ -27,7 +26,6 @@ const ShoppingCart = ({ cart, onRemoveFromCart, onClearCart }) => {
                 <div className="cart-item-details">
                   <p>{item.product.name}</p>
 
-                  {/* Este es tu "no se" en la captura, es la descripción */}
                   <p className="cart-item-description">
                     <p>Producto: {item.product.name}</p>
                     <p>Cantidad: {item.quantity} </p>

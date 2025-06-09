@@ -1,4 +1,3 @@
-// src/components/ProductCard.jsx
 import "./ProductCard.css";
 
 const ProductCard = ({ product, onAddToCart }) => {
