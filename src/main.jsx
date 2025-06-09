@@ -8,11 +8,11 @@ import "./ProductCardCreator.css";
 import "./App.css";
 import "./ShoppingCart.css";
 
-import ShoppingCart from "./ShoppingCart.jsx"; 
+import ShoppingCart from "./ShoppingCart.jsx";
 
 createRoot(document.getElementById("root")).render(
   <App />,
   <ProductCard />,
   <ProductCardCreator />,
-  <ShoppingCart /> //
+  <ShoppingCart />
 );
