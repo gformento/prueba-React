@@ -1,0 +1,82 @@
+/* src/components/ProductCardCreator.css */
+.product-card-creator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.product-card-creator h1 {
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* --- Estilos para el formulario --- */
+.product-form {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 25px;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 500px; /* Limita el ancho del formulario */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Espacio entre los grupos de formulario */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+  text-align: left; /* Alinea las etiquetas a la izquierda */
+}
+
+.form-group input[type="text" ],
+.form-group input[type="number"],
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+  width: calc(100% - 22px); /* Ajusta el ancho para el padding */
+}
+
+.form-group textarea {
+  resize: vertical; /* Permite redimensionar verticalmente */
+  min-height: 80px;
+}
+
+/* --- Resto de los estilos ya existentes --- */
+.create-card-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: center; /* Centra el botón dentro del formulario flex */
+  margin-top: 10px;
+}
+
+.create-card-button:hover {
+  background-color: #218838;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}

@@ -1,0 +1,110 @@
+/* src/components/ShoppingCart.css */
+.shopping-cart {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 30px auto; /* Centra el carrito y le da margen */
+    max-width: 600px; /* Ancho máximo para que no sea demasiado grande */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .shopping-cart h2 {
+    color: #333;
+    margin-bottom: 25px;
+  }
+  
+  .cart-items {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+  }
+  
+  .cart-item:last-child {
+    border-bottom: none; /* No borde en el último item */
+  }
+  
+  .cart-item-image {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 15px;
+  }
+  
+  .cart-item-details {
+    flex-grow: 1; /* Ocupa el espacio restante */
+    text-align: left;
+  }
+  
+  .cart-item-details p {
+    margin: 2px 0;
+    font-size: 0.95em;
+  }
+  
+  .remove-from-cart-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .remove-from-cart-button:hover {
+    background-color: #c82333;
+  }
+  
+  .cart-total {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #f0f0f0;
+  }
+  
+  .cart-total h3 {
+    font-size: 1.5em;
+    color: #28a745;
+    margin-bottom: 15px;
+  }
+  
+  .checkout-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .checkout-button:hover {
+    background-color: #0056b3;
+  }
+
+  .cart-item-details p {
+    margin: 2px 0;
+    font-size: 0.95em;
+  }
+  
+  /* Estilo para la descripción en el carrito */
+  .cart-item-description {
+    font-size: 0.85em; /* Un poco más pequeña */
+    color: #777;      /* Un color de texto más suave */
+    margin-top: 5px;
+    max-height: 3em; /* Limita la altura para descripciones largas */
+    overflow: hidden; /* Oculta el texto que se desborda */
+    text-overflow: ellipsis; /* Añade puntos suspensivos si el texto es muy largo */
+    white-space: nowrap; /* Mantiene el texto en una sola línea (ajusta si quieres multilínea) */
+  }
+  
