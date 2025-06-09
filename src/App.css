@@ -11,9 +11,7 @@ body {
   box-sizing: border-box;
 }
 
-/* Opcionalmente, para que App no tenga sus propios márgenes si los tenía */
 .App {
   width: 100%; /* Permite que App ocupe el ancho disponible y se centre */
   max-width: 1200px; /* Limita el ancho para contenido en pantallas grandes */
-  /* No necesitas flexbox aquí si el body ya está centrando */
 }
