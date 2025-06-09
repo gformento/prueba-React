@@ -1,7 +1,7 @@
 import React from "react";
 import "./ShoppingCart.css";
 
-const ShoppingCart = ({ cart, onRemoveFromCart, onClearCart}) => {
+const ShoppingCart = ({ cart, onRemoveFromCart, onClearCart }) => {
   // Calcula el total del carrito
   const total = cart.reduce(
     (sum, item) => sum + item.product.price * item.quantity,
@@ -50,7 +50,12 @@ const ShoppingCart = ({ cart, onRemoveFromCart, onClearCart}) => {
           </ul>
           <div className="cart-total">
             <h3>Total del Carrito: ${total.toFixed(2)}</h3>
-            <button className="checkout-button" onClick={() => alert("Procediendo al pago")}>Proceder al Pago</button>
+            <button
+              className="checkout-button"
+              onClick={() => alert("Procediendo al pago")}
+            >
+              Proceder al Pago
+            </button>
             <br /> <br />
             <button className="checkout-button" onClick={() => onClearCart()}>
               Vaciar Carrito

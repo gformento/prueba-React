@@ -13,6 +13,12 @@
     color: #333;
     margin-bottom: 25px;
   }
+
+  .shopping-cart p {
+    color: #666;
+    font-size: 0.95em;
+    margin-bottom: 20px;
+  }
   
   .cart-items {
     list-style: none;
